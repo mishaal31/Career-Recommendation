@@ -1,28 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Career Guide</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: url("images/loginform1.png") no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.92);
+            padding: 30px;
+            border-radius: 12px;
+            width: 420px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(4px);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 28px;
+            color: #003d99;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #bbb;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #0066ff;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .options {
+            margin-bottom: 15px;
+        }
+
+        .options input {
+            margin-right: 6px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #132c4d;
+            border: none;
+            color: white;
+            font-size: 17px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #132c4d;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo.png" alt="logo">
-            </a>
-        </div>
-        <div class="nav">
-            <a href="contact.html" class="links">Contact Us</a>
-            <a href="careers.html" class="links">Explore Careers</a>
-            <a href="index.html#guide" class="links">Guide</a>
-            <a href="quiz.html" class="choose-career">Choose Your Career</a>
-        </div>
+
+    <div class="contact-box">
+
+        <h1>Contact Us</h1>
+
+    <form>
+
+    <label><b>Full Name:</b></label>
+    <input type="text" name="fullname" placeholder="Full Name" required>
+
+    <label><b>E-mail:</b></label>
+    <input type="email" name="email" placeholder="Enter your email" required>
+
+    <label><b>Contact Number:</b></label>
+    <input type="tel" name="contact" placeholder="Enter your contact number" required>
+
+    <label><b>Gender:</b></label>
+    <div class="options">
+        <input type="radio" name="gender" value="male"> Male <br>
+        <input type="radio" name="gender" value="female"> Female
+    </div>
+
+    <label><b>Country:</b></label>
+    <select>
+        <option>Pakistan</option>
+        <option>Scotland</option>
+        <option>Turkey</option>
+        <option>China</option>
+        <option>Korea</option>
+        <option>Japan</option>
+    </select>
+
+    <label><b>How can we help you?</b></label>
+    <textarea rows="5" placeholder="Write your message"></textarea>
+
+    <button type="submit" class="btn">Submit</button>
+
+    </form>
+
     </div>
 
 </body>
-
 </html>
