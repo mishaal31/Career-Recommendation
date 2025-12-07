@@ -258,7 +258,7 @@
 .contact-page {
     width: 100%;
     min-height: 100vh; /* full screen height */
-    background: url('images/contact-bg.jpg') no-repeat center center/cover;
+    background: url('images/loginform1.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,7 +267,7 @@
 }
 
 .contact-box {
-    background: #eaeaea; /* white background */
+    background: #f7f5f5; /* white background */
     padding: 30px;
     border-radius: 12px;
     width: 400px; /* form width */
