@@ -361,3 +361,10 @@
     .contact-box .btn:hover {
       background: #0b1f3d;
     }
+
+    /* Fix input width consistency */
+.contact-box input[type="text"],
+.contact-box input[type="email"],
+.contact-box input[type="tel"] {
+  box-sizing: border-box;
+}
